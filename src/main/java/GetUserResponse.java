@@ -1,2 +1,4 @@
-package PACKAGE_NAME;public class GetUserResponse {
+public class GetUserResponse {
+    public User data;
+    public SupportResponse support;
 }

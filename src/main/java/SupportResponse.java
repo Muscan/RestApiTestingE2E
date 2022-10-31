@@ -1,2 +1,4 @@
-package PACKAGE_NAME;public class SupportResponse {
+public class SupportResponse {
+    public String url;
+    public String text;
 }

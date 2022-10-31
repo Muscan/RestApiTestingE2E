@@ -1,2 +1,11 @@
-package PACKAGE_NAME;public class GetResourceResponse {
+import java.util.ArrayList;
+
+public class GetResourceResponse {
+
+    public int page;
+    public int per_page;
+    public int total;
+    public int total_pages;
+    public ArrayList<Resource> data;
+    public SupportResponse support;
 }
