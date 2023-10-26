@@ -1,5 +1,3 @@
-Certainly, I've updated the README with the version information and a mention of the public API used in your code. Here's the revised README:
-
 # API Tests Readme
 
 This README provides an overview of the Java code for conducting API tests using the RestAssured library. The code includes various test cases for interacting with a RESTful API. The purpose of this document is to describe the structure of the code, provide context for each test, and specify the library versions used.
