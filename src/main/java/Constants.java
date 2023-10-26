@@ -26,5 +26,4 @@ public class Constants {
     public static final int SUCCESS_CODE = 200;
     public static final int SERVER_ERROR = 500;
     public static final String SEPARATOR = "/";
-
 }

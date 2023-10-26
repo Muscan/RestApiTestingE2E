@@ -6,7 +6,6 @@ import java.util.Properties;
 public class FrameworkProperties {
     private String result = "";
     private InputStream inputStream;
-
     public String getPropValues(String value) throws IOException {
         try {
             Properties prop = new Properties();

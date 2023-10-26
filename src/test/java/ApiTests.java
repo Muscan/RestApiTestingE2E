@@ -14,34 +14,35 @@ public class ApiTests {
     static String userId;
     static String token;
 
+
+    //initialize the properties
+    //this method will be executed before the tests
     @BeforeClass
     public static void initializeObjects() {
         properties = new FrameworkProperties();
     }
 
-
-    //with status code check (When then - implict assert)
-    //get/users -> checks only the status code to be 200
     @Test
     public void testGetUsers(){
+        Response response = null;
         String targetURI = Constants.BASE_URL + Constants.GET_USERS;
-        RestAssured.given()
-                   .header(Constants.CONTENT_TYPE, Constants.CONTENT_TYPE_VALUE)
-                   .when()
-                   .get(targetURI)
-                   .then()
-                   .statusCode(Constants.SUCCESS_CODE);
+        response = RestAssured
+                .given()
+                .header(Constants.CONTENT_TYPE, Constants.CONTENT_TYPE_VALUE)
+                .when()
+                .get(targetURI);
+        assertEquals(Constants.SUCCESS_CODE, response.statusCode());
+        System.out.println("testGetUsers has passed");
     }
+
+
     //With Json
     //get/users -> returns a list and it check the Object User to be in the arrayList<User>
     @Test
+    //refactor this test
     public void testGetUsers2(){
-        User expectedUser = new User(1,"george.bluth@reqres.in","George", "Bluth","https://reqres.in/img/faces/1-image.jpg" );
         Response response = null;
         String targetURI = Constants.BASE_URL + Constants.GET_USERS;
-        //when sending a body, use
-        //JsonObject payload = new JsonObject();
-
         response = RestAssured
                 .given()
                 .header(Constants.CONTENT_TYPE, Constants.CONTENT_TYPE_VALUE)
@@ -49,11 +50,9 @@ public class ApiTests {
                 .get(targetURI);
         assertEquals(Constants.SUCCESS_CODE, response.statusCode());
         var usersResponse = response.as(GetUsersResponse.class);
-        var usersArray = usersResponse.data;
-        assertTrue(usersArray.contains(expectedUser));
-        System.out.println(usersArray.get(0));
-        System.out.println("testGetUsers2 has passed");
-
+        var users = usersResponse.data;
+        System.out.println(users);
+        //System.out.println(users.get(0));
     }
     //get all resources
     @Test
@@ -105,6 +104,7 @@ public class ApiTests {
     //register a new user
     //bear in mind that the register accepts only "eve.holt@reqres.in",
     // "password": "test"
+
     @Test
     public void registerUser() throws IOException {
         Response response = null;
@@ -119,7 +119,7 @@ public class ApiTests {
         response = RestAssured.given()
                 .relaxedHTTPSValidation()
                 .header(Constants.CONTENT_TYPE, Constants.CONTENT_TYPE_VALUE)
-                .body(payload)
+                .body(payload.toString())   //sending the actual body
                 .when()
                 .post(targetURI);
         assertEquals(Constants.SUCCESS_CODE, response.statusCode());

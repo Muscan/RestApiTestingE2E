@@ -5,17 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ffcb2ec7-9047-4d24-9289-d69376dab930" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/FrameworkProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FrameworkProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GetResourceResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GetResourceResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GetUserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GetUserResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RegisterUserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RegisterUserResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Resource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Resource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SupportResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SupportResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/api.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/api.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ApiTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ApiTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,12 +56,21 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ApiTests.registerUser">
-    <configuration name="ApiTests.getUserByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="RealApiTestingE2E" />
+  <component name="RunManager" selected="JUnit.ApiTests.registerUser (1)">
+    <configuration name="ApiTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RestAssuredAutomation" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ApiTests" />
-      <option name="METHOD_NAME" value="getUserByIdTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiTests.registerUser (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RestAssuredAutomation" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ApiTests" />
+      <option name="METHOD_NAME" value="registerUser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -84,18 +86,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApiTests.testGetResource" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="RealApiTestingE2E" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ApiTests" />
-      <option name="METHOD_NAME" value="testGetResource" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ApiTests.testGetUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="RealApiTestingE2E" />
+    <configuration name="ApiTests.testGetUsers (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RestAssuredAutomation" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ApiTests" />
       <option name="METHOD_NAME" value="testGetUsers" />
@@ -105,7 +97,7 @@
       </method>
     </configuration>
     <configuration name="ApiTests.testGetUsers2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="RealApiTestingE2E" />
+      <module name="RestAssuredAutomation" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ApiTests" />
       <option name="METHOD_NAME" value="testGetUsers2" />
@@ -116,11 +108,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ApiTests.registerUser" />
-        <item itemvalue="JUnit.ApiTests.getUserByIdTest" />
-        <item itemvalue="JUnit.ApiTests.testGetResource" />
+        <item itemvalue="JUnit.ApiTests.registerUser (1)" />
         <item itemvalue="JUnit.ApiTests.testGetUsers2" />
-        <item itemvalue="JUnit.ApiTests.testGetUsers" />
+        <item itemvalue="JUnit.ApiTests" />
+        <item itemvalue="JUnit.ApiTests.testGetUsers (1)" />
+        <item itemvalue="JUnit.ApiTests.registerUser" />
       </list>
     </recent_temporary>
   </component>
